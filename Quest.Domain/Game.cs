@@ -75,6 +75,9 @@ public class Game {
     }
   }
 
+  /// <summary>
+  /// Processes all queued attacks by resolving them using the combat resolver.
+  /// </summary>
   private void ProcessAttacks() {
     // Resolve all queued attacks first
     while (!_queuedAttacks.IsEmpty) {
@@ -83,14 +86,23 @@ public class Game {
     }
   }
 
+  /// <summary>
+  /// Processes all trades
+  /// </summary>
   private void ProcessTrades() {
     // Implement trade processing logic
   }
 
+  /// <summary>
+  /// Moves units 
+  /// </summary>
   private void MoveUnits() {
     // Implement units movement logic
   }
 
+  /// <summary>
+  /// Handles production
+  /// </summary>
   private void HandleProduction() {
     // Implement production handling logic
   }

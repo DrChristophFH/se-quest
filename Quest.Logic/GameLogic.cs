@@ -14,12 +14,10 @@ public class GameLogic {
 
   public Player JoinGame() {
     lock (_lock) {
-      Player newPlayer = new Player {
-        Id = Guid.NewGuid()
-      };
-      players.Add(newPlayer.Id, newPlayer);
+      var player = new Player();
+      players.Add(player.Id, player);
 
-      return newPlayer;
+      return player;
     }
   }
 

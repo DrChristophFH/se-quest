@@ -1,3 +1,5 @@
+using System;
+
 namespace Quest.Domain;
 
 public class Player {
